@@ -16,10 +16,6 @@ const index = (props) => {
             const parsedData = JSON.parse(value);
             if (parsedData) {
                 dispatch({ type: 'SET_LOCAL_COLLECTIONS', payload: parsedData })
-                setTimeout(() => {
-                    setLoading(false)
-                }, 1000)
-                
             }
         })
     }, [])
@@ -28,6 +24,9 @@ const index = (props) => {
         if (state?.taskDatas?.length) {
             props.navigation.navigate("TaskList")
         }
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000)
     }, [state])
 
     if (loading) {
