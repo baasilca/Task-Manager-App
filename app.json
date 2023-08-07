@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Todo-app",
+    "slug": "Todo-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/pencil.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.cezcon.Todoapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "219f3d2d-b75a-415e-ac0b-fd418e6cb269"
+      }
+    }
+  }
+}
